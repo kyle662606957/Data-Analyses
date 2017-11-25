@@ -1,14 +1,6 @@
-from scipy.interpolate import interp1d
-import numpy as np
-def deco(func):
-        def wrapper():
-            print("before myfunc() called.")
-            func()
-            print("  after myfunc() called.")
-        return wrapper
+# -*- coding: utf-8 -*-
 
-@deco
-def myfunc():
-    print(" myfunc() called.")
+member=['甲鱼','黑夜']
+member.insert(1,88)
+print member[2]
 
-myfunc()
